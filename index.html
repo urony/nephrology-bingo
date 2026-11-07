@@ -10,11 +10,12 @@
 .anatomy-image{display:block;width:100%;height:auto;max-height:60vh;object-fit:contain}.preview-card .anatomy-image{max-height:260px}.preview-card .bingo-cell{min-height:44px}.print-meta{font-size:12px;text-align:center;margin:3px 0;color:#41515f}
 .mode-bar{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:14px 0}.mode-bar select{background:#f5ffff;color:#102438;border-radius:9px;padding:9px 14px;border:0;font-weight:bold}.mode-bar label{color:#d3e9fb;font-weight:bold}
 @media print{@page{size:A4 portrait;margin:6mm}.printed-card{height:284mm!important;margin:0!important;padding:1mm 3mm!important;border:none!important;break-after:page!important}.printed-card .anatomy-image{height:191mm!important;width:100%!important;object-fit:contain}.printed-card .card-title{font-size:15px!important;margin:0 0 2px!important}.printed-card .bingo-grid{width:48%;float:left;font-size:16px}.printed-card .bingo-cell{height:17mm!important;min-height:0!important}.printed-card .no-match{width:49%;float:right;margin-top:1mm!important}.printed-card .joker-grid{display:block}.printed-card .joker-slot{height:14mm!important}.printed-card .print-footer{clear:both;padding-top:3mm}.printed-card .print-meta{display:none}}
+.credit{display:inline-block;font-size:12px;font-weight:600;color:#94e9dc;margin-inline-start:11px}
 </style>
 </head>
 <body>
 <div class="app">
- <header class="top"><div class="brand"><h1>🩺 בינגו אנטומיה</h1><p>מערכת השתן והנפרון · משחק כיתתי</p></div><nav class="tabs"><button class="tab active" id="teacherTab">מסך המורה</button><button class="tab" id="cardsTab">הכנת כרטיסים</button></nav></header>
+ <header class="top"><div class="brand"><h1>🩺 בינגו אנטומיה</h1><p>מערכת השתן והנפרון · משחק כיתתי <span class="credit">פותח על ידי אורי העליון</span></p></div><nav class="tabs"><button class="tab active" id="teacherTab">מסך המורה</button><button class="tab" id="cardsTab">הכנת כרטיסים</button></nav></header>
  <section id="teacherView" class="layout">
   <main class="stage"><div class="stage-head"><span class="pill" id="progress">0 מתוך 23</span><span id="phase">מוכנים להתחיל?</span></div>
    <div><div class="clue"><div class="clue-type" id="clueType">הגרלה אקראית</div><div class="clue-text placeholder" id="clueText">לחצו על ״הגרל חידה״ כדי להתחיל</div></div><div class="answer hidden" id="answer"></div></div>
